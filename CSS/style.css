@@ -1,0 +1,144 @@
+/* Index page property */
+
+.header_logo {
+    width: 60px;
+    height: 60px;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.bg-col {
+    background: conic-gradient(#D5E3F1 0deg 180deg, #E1E9EF 180deg 360deg);
+}
+
+.kitchen_banner {
+    width: 100%;
+    height: 260px;
+}
+
+
+.bg_text_img {
+    rotate: 270deg;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+}
+
+.bg_text_des {
+    position: absolute;
+    top: 50px;
+}
+
+.smbanner_img{
+    width: 40px;
+    height: 70px;
+}
+
+.pic_zoom{
+    overflow: hidden;
+}
+.pic_zoom > a{
+    transition: transform 1s;
+    object-fit: cover;
+}
+.pic_zoom > a:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (min-width:0px) and (max-width:950px) {
+    div>.img_position{
+        padding-bottom: 0px;
+        padding-top: 90px;
+    }
+    
+}
+
+@media screen and (min-width:950px) {
+    div>.img_position{
+        padding-bottom: 48px;
+    }
+    
+}
+/* index page ends */
+
+.regLink {
+    text-decoration: none;
+}
+
+.product_curosel>a>img {
+    height: 40px;
+    width: 40px;
+}
+
+.product_curosel_text {
+    font-size: 13px;
+    line-height: 0px;
+}
+
+.aside_action {
+    background-color: whitesmoke;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pos_abs {
+    position: absolute;
+    right: 12px;
+    top: -5px;
+}
+
+.customerImage {
+    width: 40px;
+    height: 40px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.searchicon {
+    position: absolute;
+    top: 10px;
+    right: 90px;
+}
+
+.search_model {
+    width: 60px;
+    height: 60px;
+}
+
+.productDetail_bg {
+    background-color: #e6f2f77b;
+}
+
+.fabricImg {
+    width: 50px;
+    height: 50px;
+}
+
+.sellemorelogo {
+    width: 120px;
+    height: 60px;
+}
+
+/* Design Idea page */
+.pic_zoom{
+    overflow: hidden;
+}
+.pic_zoom > img{
+    transition: transform 1s;
+    /* object-fit: cover; */
+}
+.pic_zoom > img:hover{
+    transform: scale(1.1);
+}
+
+/* footer property */
+.footer_link>li {
+    list-style: none;
+}
+footer {
+    background-color: lightgrey;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hover_yellow:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <nav class="bg-col navbar navbar-expand-lg sticky-top">
+        <div class="bg-col container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="/Assets/logo.png" alt="Logo" class="header_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold hover_yellow text-secondary-emphasis" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow"
+                                    href="productPage.html">Furniture</a></li>
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow"
+                                    href="productPage.html">Bedding</a></li>
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow"
+                                    href="productPage.html">Lighting</a></li>
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow" href="productPage.html">Pillow
+                                    and Decor</a>
+                            </li>
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow" href="productPage.html">Wall Art
+                                    and
+                                    Mirror</a></li>
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow" href="productPage.html">Table
+                                    Top</a></li>
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow"
+                                    href="productPage.html">Glassware</a></li>
+                            <li class="my-3 mx-3"><a class="dropdown-item hover_yellow"
+                                    href="productPage.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" aria-current="page"
+                            href="designIdea.html">DESIGN
+                            IDEAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis"
+                            href="storiesPage.html">STORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" href="faq.html">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" href="contactUs.html">CONTACT
+                            US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" href="checkOut.html">SALE</a>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-secondary-emphasis hover_yellow" aria-current="page"
+                            href="search.html">SEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-secondary-emphasis hover_yellow" href="loginPage.html">SIGN
+                            IN</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link hover_yellow" href="cart.html"><img src="/Assets/cart.png" alt="Cart"
+                                class="me-0"></a>
+                        <a href="cart.html"><span
+                                class="position-absolute end-0 top-0 translate-middle px-2 bg-warning border border-light rounded-circle">
+                                <small>1</small>
+                            </span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header ends -->
+
+    <!-- BreadCrumb start -->
+
+    <nav aria-label="breadcrumb" class="m-5 px-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
+            <li class="breadcrumb-item"><a href="productPage.html" class="text-decoration-none text-black">Stool</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Vintage 50's</li>
+        </ol>
+    </nav>
+    <!-- BreadCrumb ends -->
+    <section class="container">
+        <section class="d-flex row">
+            <section class="ms-0 d-flex flex-column col-lg-2 col-md-6 col-sm-6">
+                <a href="#"><img src="/Assets/vintage-3a.png" alt="Vintage 50"></a>
+                <a href="#"><img src="/Assets/vintage-4a.png" alt="Vintage 50"></a>
+                <a href="#"><img src="/Assets/vintage-5a.png" alt="Vintage 50"></a>
+                <p class="text-secondary-emphasis fs-6 mb-0 text-center">Vintage 50's</p>
+                <p class="text-secondary text-center">&#8377;12,999</p>
+            </section>
+            <section class="col-lg-5 col-md-6 col-sm-6">
+                <img src="/Assets/vintage-3a-big.jpg" alt="Vintage 50" class="img-fluid">
+                <div class="d-flex">
+                    <button type="button" class="btn btn-dark rounded-pill me-3">ADD TO BAG</button>
+                    <button type="button" class="btn btn-warning rounded-pill me-3">LOOKBOOK</button>
+                    <div style="width: 80px; background-color: yellow;" class="rounded-pill">
+                        <a href="#" style="height: 50px;" class=" d-flex justify-content-center align-items-center"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 512 512">
+                                <path class="text-center"
+                                    d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </section>
+            <section class="col-lg-5 col-md-12 col-sm-12 productDetail_bg">
+                <h2>Vintage 50's</h2>
+                <p>Location: Bangalore</p>
+                <p class="bg-dark-subtle p-2">Overview</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore inventore possimus sapiente
+                    aspernatur quos placeat eligendi optio numquam laudantium voluptatibus doloremque officiis,
+                    reprehenderit ipsum odio minima maxime! Similique, porro.</p>
+                <hr>
+                <p class="bg-dark-subtle p-2">Details and Dimensions</p>
+                <p class="bg-dark-subtle p-2">Shipping</p>
+                <p>Min-order: 1 Pcs</p>
+                <div class="text-end">
+                    <img src="/Assets/sellemorelogo.png" alt="SellMore Logo" class="img-fluid sellemorelogo">
+                </div>
+                <hr class="my-0">
+                <div class="d-flex mt-2">
+                    <p my-1>Material</p>
+                    <div class="ms-5">
+                        <img src="/Assets/wood_icon.png" alt="Cloth Material" class="fabricImg my-1">
+                        <img src="/Assets/fabric_icon.png" alt="Cloth Material" class="fabricImg my-1">
+                    </div>
+                </div>
+                <hr class="my-0">
+                <div class="d-flex">
+                    <p class="my-1">Dimensions</p>
+                    <p class="ms-4 my-1">W 69cm x D 75cm x H 77cm (SH 40cm)</p>
+                </div>
+                <hr class="my-0">
+                <div class="d-flex">
+                    <p class="me-5 my-1">Color</p>
+                    <p class="ms-4 my-1">Beige</p>
+                </div>
+                <hr class="my-0">
+                <div class="d-flex">
+                    <p class="me-5 my-1">Stock</p>
+                    <p class="ms-4 my-1">10</p>
+                </div>
+                <hr class="my-0">
+                <div class="d-flex">
+                    <p class="my-1">Deliver Time</p>
+                    <p class="ms-4 my-1">2 Days</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <p class="me-3 m-0">Tags:</p>
+                    <div class="column-gap-3">
+                        <button type="button" class="btn btn-warning rounded-pill me-2">Sofa</button>
+                        <button type="button" class="btn btn-warning rounded-pill me-2">Living Room</button>
+                        <button type="button" class="btn btn-warning rounded-pill">Classic</button>
+                    </div>
+                </div>
+                <div class="d-flex mt-5 mb-3">
+                    <h4>&#8377;12,999</h4>
+                    <div class="d-flex">
+                        <p class="ms-5">Quantity:</p>
+                        <div class="container d-flex">
+                            <button class="me-2" onclick="increment()">+</button>
+                            <h3 class="me-2 my-2" id="counting">1</h3>
+                            <button onclick="decrement()">-</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section class="my-5 container-fluid">
+        <h4>You Might Also Like</h4>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <div class="position-relative pic_zoom">
+                        <img src="/Assets/stool1.jpg" alt="BarTool" class="img-fluid">
+                        <p class="text-white bg-warning bg_text_img p-2">SALE</p>
+                    </div>
+                    <div
+                        class="category d-flex flex-column justify-content-center align-items-center align-self-cente align-content-center">
+                        <p class="m-0 text-center">&#8377;12,999</p>
+                        <p class="m-0 text-center">Vee Bar Stool, Black Brown</p>
+                        <p class="m-0 text-center"><small class="text-warning fw-bold">Shop Bar Stools</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <div class="position-relative pic_zoom">
+                        <img src="/Assets/table.jpg" alt="BarTool" class="img-fluid">
+                        <p class="text-white bg-warning bg_text_img p-2">SALE</p>
+                    </div>
+                    <div
+                        class="category d-flex flex-column justify-content-center align-items-center align-self-cente align-content-center">
+                        <p class="m-0 text-center">&#8377;12,999</p>
+                        <p class="m-0 text-center">Vee Bar Stool, Black Brown</p>
+                        <p class="m-0 text-center"><small class="text-warning fw-bold">Shop Bar Stools</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <div class="pic_zoom">
+                        <img src="/Assets/vintage.jpg" alt="BarTool" class="img-fluid">
+                    </div>
+                    <div
+                        class="category d-flex flex-column justify-content-center align-items-center align-self-cente align-content-center">
+                        <p class="m-0 text-center">&#8377;12,999</p>
+                        <p class="m-0 text-center">Vee Bar Stool, Black Brown</p>
+                        <p class="m-0 text-center"><small class="text-warning fw-bold">Shop Bar Stools</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <div class="pic_zoom">
+                        <img src="/Assets/side_table.jpg" alt="BarTool" class="img-fluid">
+                    </div>
+                    <div
+                        class="category d-flex flex-column justify-content-center align-items-center align-self-cente align-content-center">
+                        <p class="m-0 text-center">&#8377;12,999</p>
+                        <p class="m-0 text-center">Vee Bar Stool, Black Brown</p>
+                        <p class="m-0 text-center"><small class="text-warning fw-bold">Shop Bar Stools</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+
+    <footer class="p-4 mt-5 body">
+        <div>
+            <h2 class="text-center text-dark-emphasis mb-3">Top Categories</h2>
+        </div>
+        <section class="outer_section row">
+            <Section class="footerLogo col-lg-3 col-md-6 col-sm-12 d-flex ps-4">
+                <div class="col">
+                    <div class="d-flex">
+                        <a href="index.html"
+                            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                            <img class="bi me-2" width="60" height="60" src="/Assets/logo_footer.png" alt="Logo">
+                        </a>
+                        <p class="text-body-secondary">Lorem, ipsum dolor sit amet adipisicing elit. Consectetur, sit
+                            eum eaque quod</p>
+                    </div>
+                    <div>
+                        <p class="text-body-secondary ps-2">© 2023 Furniture.id All rights reserved</small></p>
+                    </div>
+                </div>
+            </Section>
+            <section class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                <div class=" d-flex justify-content-lg-end">
+                    <ul class="footer_link d-flex flex-column">
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Dining
+                                Room</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Decoration</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Renovation</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Bedroom</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Furniture</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Bathroom</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Lighting</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                <div class=" d-flex justify-content-lg-end">
+                    <ul class="footer_link d-flex flex-column">
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Architects</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Interior
+                                Designers</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Contractors</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Home
+                                Builders</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Landscape
+                                Designers</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Furniture
+                                Repairs</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html" class="nav-link p-0 text-body-secondary">Air
+                                Conditioning</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                <div class=" d-flex justify-content-lg-center">
+                    <ul class="footer_link d-flex flex-column">
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Plumbers</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Electricians</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Welders</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Movers</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Carpet
+                                Cleaners</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Glass
+                                Services</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Canopy
+                                Services</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </footer>
+    <!-- footer section ends -->
+
+</body>
+
+</html>

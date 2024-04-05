@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width: 767px) {
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        /* medium and up screens */
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(25%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%);
+            }
+        }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start {
+            transform: translateX(0);
+        }
+
+        a>img {
+            height: 40px;
+            width: 40px;
+        }
+
+        button {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+
+        .carousel-indicators {
+            bottom: -100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/home_builders_icon.png" class=" img-fluid"
+                                            alt="Home Builders"></a>
+                                </div>
+                                <div>Home Builders</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/contractors_icon.png" class=" img-fluid"
+                                            alt="Contractors"></a>
+                                </div>
+                                <div>Contractors</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/arsitek_icon.png" class=" img-fluid"
+                                            alt="Architects"></a>
+                                </div>
+                                <div>Architects</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/carpet_dealers_icon.png" class=" img-fluid"
+                                            alt="Carpet Dealers"></a>
+                                </div>
+                                <div>Carpet Dealers</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/landscape_designer_icon.png" class=" img-fluid"
+                                            alt="Landscape Designers"></a>
+                                </div>
+                                <div>Landscape Designers</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/interior_designer_icon.png" class=" img-fluid"
+                                            alt="Interior Designers"></a>
+                                </div>
+                                <div>Interior Designers</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/welders.png" class=" img-fluid" alt="Welders"></a>
+                                </div>
+                                <div>Welders</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/plumbers_icon.png" class=" img-fluid"
+                                            alt="Plumbers"></a>
+                                </div>
+                                <div>Plumbers</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/movers_icon.png" class="img-fluid" alt="Movers"></a>
+                                </div>
+                                <div>Movers</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/canopy.png" class="img-fluid"
+                                            alt="Glass & Canopy"></a>
+                                </div>
+                                <div>Glass & Canopy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card border border-0">
+                                <div class="card-img">
+                                    <a href="#"><img src="/Assets/carpet.png" class="img-fluid"
+                                            alt="Carpet Cleaner"></a>
+                                </div>
+                                <div>Carpet Cleaner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a> -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#recipeCarousel" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let items = document.querySelectorAll('.carousel .carousel-item')
+
+    items.forEach((el) => {
+        const minPerSlide = 9;
+        let next = el.nextElementSibling
+        for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+</script>
+
+</html>

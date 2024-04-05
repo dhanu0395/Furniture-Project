@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Checkout</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .hover_yellow:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <nav class="bg-col navbar navbar-expand-lg sticky-top">
+        <div class="bg-col container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="/Assets/logo.png" alt="Logo" class="header_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold hover_yellow text-secondary-emphasis" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Furniture</li>
+                            </a>
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Bedding</li>
+                            </a>
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Lighting</li>
+                            </a>
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Pillow and Decor</li>
+                            </a>
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Wall Art and Mirror</li>
+                            </a>
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Table Top</li>
+                            </a>
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Glassware</li>
+                            </a>
+                            <a class="dropdown-item hover_yellow" href="productPage.html">
+                                <li class="my-3 mx-3">Accessories</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" aria-current="page"
+                            href="designIdea.html">DESIGN
+                            IDEAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis"
+                            href="storiesPage.html">STORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" href="faq.html">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" href="contactUs.html">CONTACT
+                            US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold hover_yellow text-secondary-emphasis" href="checkOut.html">SALE</a>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-secondary-emphasis hover_yellow" aria-current="page"
+                            href="search.html">SEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-secondary-emphasis hover_yellow" href="loginPage.html">SIGN
+                            IN</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link hover_yellow" href="cart.html"><img src="/Assets/cart.png" alt="Cart"
+                                class="me-0"></a>
+                        <a href="cart.html"><span
+                                class="position-absolute end-0 top-0 translate-middle px-2 bg-warning border border-light rounded-circle">
+                                <small>1</small>
+                            </span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header ends -->
+
+    <!-- BreadCrumb start -->
+
+    <nav aria-label="breadcrumb" class="m-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-black">Home</a></li>
+            <li class="breadcrumb-item"><a href="cart.html" class="text-decoration-none text-black">Cart</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-black">Customer Information</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-black">Shipping Method</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Payment Method</li>
+        </ol>
+    </nav>
+    <!-- BreadCrumb ends -->
+
+    <!-- Customer information section -->
+
+    <section class="container column-gap-5 d-md-flex">
+        <section class="row">
+            <div class="bg-white p-3">
+                <p class="fs-5 text-secondary">Customer information <span><small class="text-secondary">Already have a
+                            account?</small></span><a href="loginPage.html"
+                        class="text-decoration-none text-secondary">Login</a></p>
+                <form class="row">
+                    <div class="mb-3 col-8">
+                        <input type="email" class="form-control text-secondary" placeholder="Email"
+                            id="exampleInputEmail1 validationDefault01" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1 invalidCheck2" required>
+                        <label class="form-check-label text-secondary" for="exampleCheck1 invalidCheck2">Subscribe
+                            to
+                            our news letter</label>
+                    </div>
+                    <p class="h4 text-bold text-secondary">Delivery Address</p>
+                    <div class="mb-3 col-8">
+                        <input type="text" class="form-control text-secondary" id="validationDefault01"
+                            placeholder="Full Name" aria-label="Username" required>
+                    </div>
+                    <div class="mb-3 col-8">
+                        <input type="text" class="form-control text-secondary" placeholder="Nick Name (Optional)"
+                            aria-label="Username">
+                    </div>
+                    <div class="mb-3 col-8">
+                        <input type="text" class="form-control text-secondary" id="address" placeholder="Address Line 1"
+                            aria-label="Address" required>
+                    </div>
+                    <div class="mb-3 row col-8 pe-0">
+                        <div class="mb-3 col-6 pe-0">
+                            <input type="text" class="form-control text-secondary" id="address"
+                                placeholder="Address Line 2" aria-label="Address" required>
+                        </div>
+                        <div class="mb-3 col-6 pe-0">
+                            <input type="text" class="form-control text-secondary" id="address"
+                                placeholder="Address Line 3" aria-label="Address" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3 col-8 pe-0">
+                        <div class="col-6">
+                            <label for="country" class="form-label text-secondary">Country</label>
+                            <select class="form-select pe-5" id="country" required="">
+                                <option value="" class="text-secondary">Choose...</option>
+                                <option class="text-secondary">India</option>
+                                <option class="text-secondary">United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-6 px-0">
+                            <label for="city" class="form-label text-secondary">City</label>
+                            <select class="form-select pe-5" id="city" required="">
+                                <option value="" class="text-secondary">Choose...</option>
+                                <option class="text-secondary">Bangalore</option>
+                                <option class="text-secondary">Chennai</option>
+                                <option class="text-secondary">Hyderabad</option>
+                                <option class="text-secondary">Mumbai</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid City.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-8">
+                        <input type="number" class="form-control text-secondary" placeholder="Mobile Number"
+                            id="exampleInputPassword1 validationDefault04" required>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+        <section class="col-md-4 col-sm-12">
+            <section class="bg-white pt-4">
+                <div class="row">
+                    <div class="col-8 d-flex">
+                        <a href="#"><img src="/Assets/stool1.jpg" alt="Stool" class="img-fluid"
+                                style="width: 70px; height: 70px;"></a>
+                        <div>
+                            <p class="m-0 text-secondary">Vee Bar Stool</p>
+                            <p class="m-0 text-secondary"><small>Sellemore</small></p>
+                        </div>
+                    </div>
+                    <p class="col-4 d-flex justify-content-evenly text-secondary">&#8377;<br>12,999</p>
+                </div>
+                <hr>
+                <div class="input-group mb-3 px-2">
+                    <input type="text" class="form-control" placeholder="Discount Code" aria-label="Dicount Code"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary bg-dark text-white" type="button"
+                        id="button-addon2">Apply</button>
+                </div>
+                <hr>
+                <div class="d-flex mx-3 justify-content-between">
+                    <p class="text-secondary">Subtotal</p>
+                    <p class="text-secondary">&#8377;<br>12,999</p>
+                </div>
+                <div class="d-flex mx-3 justify-content-between">
+                    <p class="text-secondary">Shipping + Transaction <br> Fee</p>
+                    <p class="text-secondary">-</p>
+                </div>
+                <hr>
+                <div class="d-flex mx-3 justify-content-between">
+                    <p class="text-secondary">Total</p>
+                    <p class="fs-4 text-secondary">&#8377;12,999</p>
+                </div>
+            </section>
+            <section class="mt-4 bg-white">
+                <div class="ms-3">
+                    <h3 class="text-secondary">Need Help?</h3>
+                    <p class="text-secondary">Find any troubles? We will <br> respond. Call or write <br>question by
+                        email</p>
+                </div>
+                <hr>
+                <div class="mx-3 bg-white d-flex justify-content-between">
+                    <p class="text-secondary"><small>Everyday from <br>9.00 to 20.00</small></p>
+                    <p class="text-secondary-emphasis"><small>+91-78782 563764 <br> info@furniture.id</small></p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- footer section start -->
+
+    <footer class="p-4 mt-5 body">
+        <div>
+            <h2 class="text-center text-dark-emphasis mb-3">Top Categories</h2>
+        </div>
+        <section class="outer_section row">
+            <Section class="footerLogo col-lg-3 col-md-6 col-sm-12 d-flex ps-4">
+                <div class="col">
+                    <div class="d-flex">
+                        <a href="index.html"
+                            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                            <img class="bi me-2" width="60" height="60" src="/Assets/logo_footer.png" alt="Logo">
+                        </a>
+                        <p class="text-body-secondary">Lorem, ipsum dolor sit amet adipisicing elit. Consectetur, sit
+                            eum eaque quod</p>
+                    </div>
+                    <div>
+                        <p class="text-body-secondary ps-2">© 2023 Furniture.id All rights reserved</small></p>
+                    </div>
+                </div>
+            </Section>
+            <section class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                <div class=" d-flex justify-content-lg-end">
+                    <ul class="footer_link d-flex flex-column">
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Dining
+                                Room</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Decoration</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Renovation</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Bedroom</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Furniture</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Bathroom</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Lighting</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                <div class=" d-flex justify-content-lg-end">
+                    <ul class="footer_link d-flex flex-column">
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Architects</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Interior
+                                Designers</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Contractors</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Home
+                                Builders</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Landscape
+                                Designers</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Furniture
+                                Repairs</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html" class="nav-link p-0 text-body-secondary">Air
+                                Conditioning</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="col-lg-3 col-md-6 col-sm-12 d-flex">
+                <div class=" d-flex justify-content-lg-center">
+                    <ul class="footer_link d-flex flex-column">
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Plumbers</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Electricians</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Welders</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Movers</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Carpet
+                                Cleaners</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Glass
+                                Services</a></li>
+                        <li class="nav-item mb-2"><a href="designIdea.html"
+                                class="nav-link p-0 text-body-secondary">Canopy
+                                Services</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </footer>
+    <!-- footer section ends -->
+
+</body>
+
+</html>
